@@ -1,0 +1,18 @@
+snippet ArchLinuxPackages Gitignore Template
+        ### ArchLinuxPackages ###
+        syntax: glob
+        *.tar
+        *.tar.*
+        *.zip
+        *.tgz
+        *.log
+        *.log.*
+        *.sig
+        
+        # AUR metadata
+        .AURINFO
+        .SRCINFO
+        
+        pkg/
+        src/
+        ${0}
