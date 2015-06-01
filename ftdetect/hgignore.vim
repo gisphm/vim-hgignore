@@ -3,4 +3,4 @@
 " Author:       gisphm <phmfk@hotmail.com>
 " URL:          https://github.com/gisphm/vim-hgignore
 
-au BufNewFile,BufRead .hgignore set filetype=gitignore
+au BufNewFile,BufRead .hgignore set filetype=hgignore
