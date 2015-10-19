@@ -24,6 +24,7 @@ build_dir="build"
 repo_dir_name="github-gitignore"
 repo_dir="$build_dir/$repo_dir_name"
 result_dir="snippets/hgignore"
+list_file="List.md"
 
 echo "*** Rebuilding started ***"
 
@@ -39,8 +40,9 @@ git clone --depth 1 https://github.com/github/gitignore.git $repo_dir
 
 # Building {{{
 
-echo "old snippets directory removed"
-rm -rf snippets
+echo "removing old snippets directory if it exists"
+[[ -d "$result_dir" ]] && rm -rf $result_dir
+[[ -f "$list_file" ]] && rm $list_file
 mkdir -p $result_dir
 echo "creating new hgignore snippets from gitignore files"
 
@@ -60,8 +62,20 @@ generate_snippets() {
     done
 }
 
+generate_list() {
+    local snippets_dir=$1
+    echo -e "# Snippets List" > $list_file
+    echo -e "\`\`\`" >> $list_file
+    for file in $snippets_dir/*.snippets; do
+        local snippets_name="`basename "$file" .snippets`"
+        echo "$snippets_name" >> $list_file
+    done
+    echo -e "\`\`\`" >> $list_file
+}
+
 generate_snippets $repo_dir $result_dir
 generate_snippets $repo_dir/Global $result_dir
+generate_list $snippets_dir
 
 # }}}
 
