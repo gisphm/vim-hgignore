@@ -30,35 +30,6 @@ Installation
     ```
 
 
-[Snippets](snippets/gitignore) List
------------------------------------
-
-```shell
-actionscript,ada,agda,android,appceleratortitanium,appcode,archives,
-archlinuxpackages,autotools,bancha,basercms,bower,bricxcc,c,c++,cakephp,
-cfwheels,chefcookbook,clojure,cloud9,cmake,codeigniter,codekit,commonlisp,
-compass,composer,concrete5,coq,cvs,dart,darteditor,delphi,django,dotsettings,
-dreamweaver,drupal,eagle,eclipse,elasticbeanstalk,elisp,elixir,emacs,ensime,
-episerver,erlang,espresso,expressionengine,fancy,finale,flexbuilder,forcedotcom,
-freepascal,fuelphp,gcov,go,gradle,grails,gwt,haskell,intellij,java,jboss,jekyll,
-jetbrains,joe,joomla,justcode,jython,kate,kdevelop4,kohana,komodoedit,laravel,
-latex,lazarus,leiningen,lemonstand,lilypond,linux,lithium,magento,matlab,maven,
-mercurial,meteor,modelsim,monodevelop,nanoc,netbeans,node,notepadpp,objective-c,
-ocaml,opa,opencart,openfoam,oracleforms,osx,perl,ph7cms,phpstorm,playframework,
-plone,prestashop,processing,pycharm,python,qooxdoo,qt,quartus2,r,rails,redcar,
-rhodesrhomobile,ros,ruby,rubymine,rubymotion,sass,sbt,scala,scrivener,sdcc,
-seamgen,senchatouch,silverstripe,sketchup,stella,sublimetext,sugarcrm,svn,
-symfony,symfony2,symphonycms,tags,target3001,tarmainstallmate,tasm,tex,textmate,
-textpattern,turbogears2,typo3,unity,vagrant,vim,virtualenv,visualstudio,vvvv,
-waf,wakanda,webmethods,webstorm,windows,wordpress,xamarinstudio,xcode,xilinxise,
-yeoman,yii,zendframework
-```
-
-* If you find that the snippets are not keeping up with the [gitignore][7] repo,
-you can manually execute the script [rebuild-snippets](rebuild-snippets)
-to rebuild snippets.
-
-
 Snippets Usage
 --------------
 
@@ -67,6 +38,12 @@ just open your `.hgignore` file, type in proper snippet name
 (for example, `Python`, or `Vim`)
 and press `<Tab>` key or other key defined in your vimrc,
 which will expand snippets.
+
+* [List](List.md)
+
+* If you find that the snippets are not keeping up with the [gitignore][7] repo,
+you can manually execute the script [rebuild-snippets](rebuild-snippets)
+to rebuild snippets.
 
 
 TODO
@@ -78,7 +55,7 @@ TODO
 Alternative Option
 --------------
 
-You can also follow [gitignore.io][6] to generate `.gitignore` file in your project.
+* You can also follow [gitignore.io][6] to generate `.gitignore` file in your project.
 
 
 Contributions
@@ -107,7 +84,7 @@ License
 [1]: https://github.com/garbas/vim-snipmate
 [2]: https://github.com/Shougo/neosnippet.vim
 [3]: https://github.com/SirVer/ultisnips
-[4]: https://github.com/gmarik/vundle
+[4]: https://github.com/VundleVim/Vundle.vim
 [5]: https://github.com/Shougo/neobundle.vim
 [6]: https://www.gitignore.io
 [7]: https://github.com/github/gitignore
