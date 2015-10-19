@@ -75,7 +75,7 @@ generate_list() {
 
 generate_snippets $repo_dir $result_dir
 generate_snippets $repo_dir/Global $result_dir
-generate_list $snippets_dir
+generate_list $result_dir
 
 # }}}
 
