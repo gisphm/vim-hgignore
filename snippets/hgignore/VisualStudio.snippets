@@ -158,6 +158,10 @@ snippet VisualStudio Hgignore Template
         csx/
         *.build.csdef
         
+        # Windows Azure Emulator
+        efc/
+        rfc/
+        
         # Windows Store app package directory
         AppPackages/
         
@@ -202,6 +206,9 @@ snippet VisualStudio Hgignore Template
         # Microsoft Fakes
         FakesAssemblies/
         
+        # GhostDoc plugin setting file
+        *.GhostDoc.xml
+        
         # Node.js Tools for Visual Studio
         .ntvs_analysis.dat
         
@@ -218,4 +225,10 @@ snippet VisualStudio Hgignore Template
         **/*.Server/GeneratedArtifacts
         **/*.Server/ModelManifest.xml
         _Pvt_Extensions
+        
+        # Paket dependency manager
+        .paket/paket.exe
+        
+        # FAKE - F# Make
+        .fake/
         ${0}
