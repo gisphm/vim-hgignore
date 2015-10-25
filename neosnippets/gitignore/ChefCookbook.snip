@@ -1,0 +1,13 @@
+snippet ChefCookbook Hgignore Template
+        ### ChefCookbook ###
+        syntax: glob
+        .vagrant
+        /cookbooks
+        
+        # Bundler
+        bin/*
+        .bundle/*
+        
+        .kitchen/
+        .kitchen.local.yml
+        ${0}
