@@ -23,8 +23,8 @@
 build_dir="build"
 repo_dir_name="github-gitignore"
 repo_dir="$build_dir/$repo_dir_name"
-result_dir="snippets/hgignore"
-neosnippets_dir="neosnippets/gitignore"
+result_dir="snippets"
+neosnippets_dir="neosnippets"
 list_file="List.md"
 
 echo "*** Rebuilding started ***"
@@ -46,8 +46,8 @@ echo "removing old snippets directory if it exists"
 [[ -d "$result_dir" ]] && rm -rf $result_dir
 [[ -d "$neosnippets_dir" ]] && rm -rf $neosnippets_dir
 [[ -f "$list_file" ]] && rm $list_file
-mkdir -p $result_dir
-mkdir -p $neosnippets_dir
+mkdir -p $result_dir/hgignore
+mkdir -p $neosnippets_dir/hgignore
 echo "creating new hgignore snippets from gitignore files"
 
 generate_snippets() {
@@ -78,11 +78,11 @@ generate_list() {
     echo -e "\`\`\`" >> $list_file
 }
 
-generate_snippets $repo_dir $result_dir "snippets"
-generate_snippets $repo_dir/Global $result_dir "snippets"
-generate_list $result_dir
-generate_snippets $repo_dir $neosnippets_dir "snip"
-generate_snippets $repo_dir/Global $neosnippets_dir "snip"
+generate_snippets $repo_dir $result_dir/hgignore "snippets"
+generate_snippets $repo_dir/Global $result_dir/hgignore "snippets"
+generate_list $result_dir/hgignore
+generate_snippets $repo_dir $neosnippets_dir/hgignore "snip"
+generate_snippets $repo_dir/Global $neosnippets_dir/hgignore "snip"
 
 # }}}
 
