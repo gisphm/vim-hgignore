@@ -10,8 +10,10 @@ AppEngine
 Archives
 ArchLinuxPackages
 Autotools
+Bazaar
 BricxCC
 CakePHP
+Calabash
 CFWheels
 ChefCookbook
 Clojure
@@ -33,6 +35,7 @@ Dart
 Delphi
 DM
 Dreamweaver
+Dropbox
 Drupal
 D
 Eagle
@@ -71,9 +74,10 @@ JDeveloper
 Jekyll
 JetBrains
 Joomla
+Julia
 Kate
 KDevelop4
-KiCAD
+KiCad
 Kohana
 LabVIEW
 Laravel
@@ -130,12 +134,14 @@ Rust
 Sass
 SBT
 Scala
+Scheme
 SCons
 Scrivener
 Sdcc
 SeamGen
 SketchUp
 SlickEdit
+Smalltalk
 Stella
 SublimeText
 SugarCRM
@@ -145,6 +151,7 @@ Symfony
 SymphonyCMS
 SynopsysVCS
 Tags
+Terraform
 TeX
 TextMate
 Textpattern

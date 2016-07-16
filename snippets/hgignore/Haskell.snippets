@@ -2,6 +2,7 @@ snippet Haskell Hgignore Template
         ### Haskell ###
         syntax: glob
         dist
+        dist-*
         cabal-dev
         *.o
         *.hi
@@ -16,5 +17,7 @@ snippet Haskell Hgignore Template
         *.prof
         *.aux
         *.hp
+        *.eventlog
         .stack-work/
+        cabal.project.local
         ${0}

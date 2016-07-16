@@ -1,10 +1,14 @@
 snippet Vim Hgignore Template
         ### Vim ###
         syntax: glob
+        # swap
         [._]*.s[a-w][a-z]
         [._]s[a-w][a-z]
-        *.un~
+        # session
         Session.vim
+        # temporary
         .netrwhist
         *~
+        # auto-generated tag files
+        tags
         ${0}

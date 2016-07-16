@@ -1,6 +1,9 @@
 snippet C Hgignore Template
         ### C ###
         syntax: glob
+        # Prerequisites
+        *.d
+        
         # Object files
         *.o
         *.ko
@@ -33,4 +36,5 @@ snippet C Hgignore Template
         
         # Debug files
         *.dSYM/
+        *.su
         ${0}

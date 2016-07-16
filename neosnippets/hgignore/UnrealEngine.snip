@@ -1,6 +1,9 @@
 snippet UnrealEngine Hgignore Template
         ### UnrealEngine ###
         syntax: glob
+        # Visual Studio 2015 user specific files
+        .vs/
+        
         # Compiled Object files
         *.slo
         *.lo
@@ -37,6 +40,8 @@ snippet UnrealEngine Hgignore Template
         *.suo
         *.opensdf
         *.sdf
+        *.VC.db
+        *.VC.opendb
         
         # Precompiled Assets
         SourceArt/**/*.png

@@ -1,9 +1,8 @@
 snippet Eclipse Hgignore Template
         ### Eclipse ###
         syntax: glob
-        *.pydevproject
+        
         .metadata
-        .gradle
         bin/
         tmp/
         *.tmp
@@ -13,6 +12,7 @@ snippet Eclipse Hgignore Template
         local.properties
         .settings/
         .loadpath
+        .recommenders
         
         # Eclipse Core
         .project
@@ -23,7 +23,10 @@ snippet Eclipse Hgignore Template
         # Locally stored "Eclipse launch configurations"
         *.launch
         
-        # CDT-specific
+        # PyDev specific (Python IDE for Eclipse)
+        *.pydevproject
+        
+        # CDT-specific (C/C++ Development Tooling)
         .cproject
         
         # JDT-specific (Eclipse Java Development Tools)
@@ -32,15 +35,21 @@ snippet Eclipse Hgignore Template
         # Java annotation processor (APT)
         .factorypath
         
-        # PDT-specific
+        # PDT-specific (PHP Development Tools)
         .buildpath
         
         # sbteclipse plugin
         .target
+        
+        # Tern plugin
+        .tern-project
         
         # TeXlipse plugin
         .texlipse
         
         # STS (Spring Tool Suite)
         .springBeans
+        
+        # Code Recommenders
+        .recommenders/
         ${0}
